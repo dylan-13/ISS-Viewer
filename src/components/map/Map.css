@@ -1,0 +1,98 @@
+.map {
+  height: 600px;
+  width: 800px;
+  margin: auto;
+  margin-bottom: 0px;
+}
+
+div.map3D {
+  position: inherit!important;
+  height: 600px;
+  width: 800px;
+  margin: auto;
+  margin-bottom: 50px;
+  padding:0px;
+}
+
+.mapStatistics {
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+}
+
+div.mapBackground{
+background: url('../../img/background.jpg');
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
+padding: 2px;
+}
+
+@media only screen and ( max-width: 1000px) {
+  .map {
+  width: 600px;
+  height: 500px;
+  }
+}
+
+@media only screen and ( max-width: 800px) {
+    .map, .map3D {
+    width: 500px!important;
+    height: 400px!important;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+    .map, .map3D {
+    width:400px!important;
+    height: 300px!important;
+    }
+  }
+
+@media only screen and (max-width: 400px) {
+    .map, .map3D {
+    width:300px!important;
+    height: 200px!important;
+    }
+  }
+
+#Boop{
+    display: none;
+}
+.hide { display: none }
+
+.accordion {
+  list-style: none;
+  padding: 0;
+}
+.accordion li {
+  margin-bottom: 1em;
+}
+.toggle {
+  width: 100px;
+  margin:auto;
+  display: block;
+  background:#BCBCC4 ; 
+  color: #96272F;
+  font-weight: bold; 
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: center;
+}
+.toggle:hover { background: #222 }
+.inner {
+  text-align: left;
+  padding: 0 1em;
+  overflow: hidden;
+  max-height: 0;
+
+  transition: max-height .6s ease;
+}
+.inner *:last-child { margin-bottom: 1em }
+.inner img { display: block; margin: 0 auto }
+.toggle{  margin-bottom: 20px;}
+
+.accordion input[type="checkbox"]:checked + li > .inner {
+  max-height: 700px; 
+}
